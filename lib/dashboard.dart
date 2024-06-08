@@ -45,11 +45,11 @@ class _DashboardState extends State<Dashboard> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Text('Institute Config. Sys', style: TextStyle(fontWeight: FontWeight.bold)),
+        title: Text('Institute Config. Sys', style: TextStyle(fontWeight: FontWeight.bold , color: Colors.white)),
         actions: [
           Builder(
             builder: (context) => IconButton(
-              icon: Icon(Icons.menu),
+              icon: Icon(Icons.menu , color: Colors.white,),
               onPressed: () => Scaffold.of(context).openDrawer(),
             ),
           ),
@@ -230,12 +230,23 @@ class _DashboardState extends State<Dashboard> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text('Log Out'),
-        content: Text('Are you sure you want to log out?'),
+        
+        title: Text('Log Out' , style: TextStyle(fontSize: 16 , fontWeight: FontWeight.bold , color: Color.fromARGB(180, 13, 31, 45)),),
+        content: Text('Are you sure you want to log out?' , style: TextStyle(color: Color.fromARGB(180, 13, 31, 45)),),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
             child: Text('Cancel'),
+            style: TextButton.styleFrom(
+            foregroundColor: Colors.white, // Text color
+            backgroundColor: Colors.blue, // Background color
+            padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 15.0),
+            textStyle: TextStyle(fontSize: 12.0,),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(30.0),
+            ),
+          ),
+
           ),
           TextButton(
             onPressed: () {
@@ -243,6 +254,15 @@ class _DashboardState extends State<Dashboard> {
               _signOut();
             },
             child: Text('Log Out'),
+                        style: TextButton.styleFrom(
+            foregroundColor: Colors.white, // Text color
+            backgroundColor: Colors.blue, // Background color
+            padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 15.0),
+            textStyle: TextStyle(fontSize: 12.0, fontWeight: FontWeight.bold),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(30.0),
+            ),
+          ),
           ),
         ],
       ),

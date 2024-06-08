@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "517285554732",
+    "project_id": "institute-configuration-system",
+    "storage_bucket": "institute-configuration-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517285554732:android:e23bf738e23580613f7f89",
+        "android_client_info": {
+          "package_name": "com.example.institute_configuration"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDretjZi-Uv_t3eKRTxH199BLbOHDfuUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
